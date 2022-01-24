@@ -45,7 +45,6 @@ class httpRequest {
     /* Custom errors of module */
     #notObjectReceivedException = class extends Error { }
     #headersWasNotObject = class extends Error { };
-    #cookiesWasNotObject = class extends Error { };
     #targetUrlWasNotAnString = class extends Error { };
     #dataArgumentWasNotJsonObject = class extends Error { };
     #urlDataArgumentWasNotJsonObject = class extends Error { };
@@ -172,7 +171,7 @@ class httpRequest {
         let /* FormData */ possibleFormData = requestData == null ? new FormData() : this.#transformJsonToFormData(requestData);
         let /* Headers */ possibleHeaders = requestHeaders == null ? new Headers() : this.#transformJsonToHeaders(requestHeaders);
 
-        requestUrl += this.#transformJsonURLdataToURLstring(requestUrlData);
+        requestUrl += requestUrlData == null ? "" : this.#transformJsonURLdataToURLstring(requestUrlData);
 
         //  Check if the method is GET.
         if (requestMethod == this.#GET) {
@@ -190,7 +189,7 @@ class httpRequest {
             let resultAsPromise = fetch(requestUrl, {
                 method: requestMethod,
                 headers: possibleHeaders,
-                body: new URLSearchParams(possibleFormData)
+                body: possibleFormData
             });
 
             // Process the promise and execute callback, to avoid DRY
@@ -202,7 +201,7 @@ class httpRequest {
 
             let /* Promise */ resultAsPromise = fetch(requestUrl,{
                 method : requestMethod,
-                body : new URLSearchParams(possibleFormData),
+                body : possibleFormData,
                 headers: possibleHeaders
             });
 
@@ -214,7 +213,7 @@ class httpRequest {
         if(requestMethod == this.#PUT){
             let /* Promise */ resultAsPromise = fetch(requestUrl,{
                 method : requestMethod,
-                body : new URLSearchParams(possibleFormData),
+                body : possibleFormData,
                 headers : possibleHeaders
             });
 

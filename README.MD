@@ -72,4 +72,11 @@ Some library's execeptions can be throwed when you make bad use of the library, 
 ## Notes
 Never forget: in javascript an assync operation that execute a callback can't change values outside the callback's scope.
 
+## Updates
+
+Update 1.0.1:
+
+    Files can be uploaded in this version, look the script below:
+    
+<img src="./images/uploadFiles.png">
 
