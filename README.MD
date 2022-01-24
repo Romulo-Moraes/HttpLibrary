@@ -61,7 +61,7 @@ Some library's execeptions can be throwed when you make bad use of the library, 
 
 - dataArgumentInGetRequest - When you try GET request after put some data configuration in the constructor
 
-## Available protocols
+## Available request methods
 
 - GET
 
