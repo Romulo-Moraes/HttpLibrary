@@ -1,16 +1,17 @@
 # HttpLibrary
 
 ## What is
-<p>Http library is an easy way to make HTTP request from popular browser, you only need to configure your request through an Json Object, and then choose you method of request.</p>
+<p>Http library is an easy way to make HTTP request from popular browser, you only need to configure your request through an Json Object, and then choose your method of request.</p>
 
 ## Creators 
 - Rômulo Peres de Moraes
 
 ## How to use
-The libray is an single file, that you just need download and import in a script tag, or through the link of raw file on Github.
+The libray is an single file, that you just need download and import in a script tag, manually or with the following script in your working directory (linux):
 
+    wget https://raw.githubusercontent.com/Romulo-Moraes/HttpLibrary/main/index.js
 
-This is a basic configuration of the module
+This is an configuration of the module
 <br/>
 <img src="./images/configuration.png">
 
