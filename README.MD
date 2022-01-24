@@ -11,9 +11,11 @@ The libray is an single file, that you just need download and import in a script
 
 
 This is a basic configuration of the module
+<br/>
 <img src="./images/configuration.png">
 
 To make a request with your protocol just do
+<br/>
 <img src="./images/request.png">
 
 The request method receive just an callback that will the executed when the request be completed
