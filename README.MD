@@ -72,7 +72,16 @@ Some library's execeptions can be throwed when you make bad use of the library, 
 - DELETE
 
 ## Notes
-Never forget: in javascript an assync operation that execute a callback can't change values outside the callback's scope.
+<h3>Nerver forget</h3>
+        
+    in javascript an assync operation that execute a callback can't change values outside the callback's scope.
+
+<h3>GET request limitation</h3>
+
+    By default of the HTTP protocol, the GET request can't have body content.
+
+
+
 
 ## Updates
 
