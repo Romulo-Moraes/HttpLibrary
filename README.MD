@@ -7,7 +7,7 @@
 - Rômulo Peres de Moraes
 
 ## How to use
-The libray is an single file, that you just need download and import in a script tag, manually or with the following script in your working directory (linux):
+The libray is an single file, that you just need download and import in a script tag, manually or with the following script in your working directory:
 
     wget https://raw.githubusercontent.com/Romulo-Moraes/HttpLibrary/main/index.js
 
