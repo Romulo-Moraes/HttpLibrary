@@ -1,7 +1,8 @@
-# HttpLibrary
+<div align="center">
+    <h1>HttpLibrary</h1>
+    <p>Http library is an easy way to make HTTP request from popular browser, you only need to configure your request through an Json Object, and then choose your method of request.</p>
+</div>
 
-## What is
-<p>Http library is an easy way to make HTTP request from popular browser, you only need to configure your request through an Json Object, and then choose your method of request.</p>
 
 ## Creators 
 - Rômulo Peres de Moraes
